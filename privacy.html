@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the IRCM Discord bot">
+  <title>Privacy Policy | IRCM Discord Bot</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f7f8fa;
+      --surface: #ffffff;
+      --text: #20242a;
+      --muted: #5d6672;
+      --border: #d8dde5;
+      --link: #2459b8;
+      --table-head: #edf1f6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #15171a;
+        --surface: #202328;
+        --text: #edf0f3;
+        --muted: #b7bec8;
+        --border: #3a414b;
+        --link: #8db5ff;
+        --table-head: #2b3139;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(920px, calc(100% - 2rem));
+      margin: 2rem auto 4rem;
+      padding: clamp(1.25rem, 3vw, 3rem);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin-top: 0; font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { margin-top: 2.5rem; font-size: 1.55rem; }
+    h3 { margin-top: 1.7rem; font-size: 1.1rem; }
+    p, ul, ol { max-width: 78ch; }
+    a { color: var(--link); }
+    .updated { color: var(--muted); margin-top: -1rem; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid var(--border); padding: .7rem .8rem; text-align: left; vertical-align: top; }
+    th { background: var(--table-head); }
+    footer { color: var(--muted); border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: October 5, 2026</p>
+
+  <p>This Privacy Policy explains how the IRCM Discord bot processes and stores information when it is used on the IRCM Discord server. The bot uses this data only for the server features described below.</p>
+
+  <h2>1. Data We Process</h2>
+
+  <h3>Discord account and member information</h3>
+  <ul>
+    <li>Discord user ID, username, display name, and nickname</li>
+    <li>Roles, avatar information, account creation date, and server join date</li>
+    <li>Guild and channel identifiers</li>
+  </ul>
+
+  <h3>Message data</h3>
+  <p>In channels and features where the bot operates, it may process message content, message IDs, author information, links, attachments, and embeds. This data is used for moderation, logging, tickets, help threads, and other server features that depend on normal Discord messages.</p>
+
+  <h3>Presence information</h3>
+  <p>The bot processes online, idle, Do Not Disturb, and offline or last-seen information for member-information features.</p>
+
+  <h3>Support and moderation information</h3>
+  <p>This can include ticket conversations, moderation events, server event logs, role or nickname changes, and help-thread history.</p>
+
+  <h3>AI assistant data</h3>
+  <p>When a user talks to the AI assistant, the bot processes the user's prompt and relevant conversation context. AI conversation history is stored locally so later replies can use previous messages.</p>
+
+  <h2>2. How We Use Data</h2>
+  <ul>
+    <li>Moderate messages and detect prohibited, suspicious, or unsafe content</li>
+    <li>Investigate incidents, reports, disputes, and moderation actions</li>
+    <li>Create, operate, and review support tickets</li>
+    <li>Maintain help-thread archives while the related thread exists</li>
+    <li>Keep server and moderation logs</li>
+    <li>Provide member information, including presence and last-seen information</li>
+    <li>Operate bot commands and other server features</li>
+    <li>Generate AI responses when a user chooses to use the AI assistant</li>
+  </ul>
+
+  <p>Moderation and server logs, as well as closed ticket histories, are kept for up to 90 days so server staff can review what happened on the server, investigate violations, check moderation actions, resolve disputes, review reports, and handle security or support issues.</p>
+
+  <h2>3. Message Content</h2>
+  <p>The bot may automatically read message text, links, attachments, and embeds in relevant Discord channels. This is required for moderation rules, server logging, ticket handling, help-thread archives, and other configured server features that operate on normal messages.</p>
+  <p>There is no individual opt-out from server-side message processing used for moderation, logging, tickets, or help threads. These systems apply to messages posted in the relevant server channels. Use of the AI assistant is optional, and a user can stop sending new data to an AI provider by not using that feature.</p>
+
+  <h2>4. Presence Data</h2>
+  <p>The bot uses online, idle, Do Not Disturb, and offline or last-seen status information for member information, including the <code>/info</code> command. It does not use games, Spotify activity, custom status, device status, or activity history for this feature.</p>
+  <p>The bot stores the current status or a last-seen timestamp locally. There is no user-level opt-out for presence tracking. Presence records are removed when a member leaves the server, and stale records are cleaned up by the bot.</p>
+
+  <h2>5. Data Storage and Retention</h2>
+  <p>Some data is stored locally on the system where the bot runs. The current retention rules are:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Retention</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Moderation and server logs</td><td>Up to 90 days</td></tr>
+        <tr><td>Closed ticket histories</td><td>Up to 90 days</td></tr>
+        <tr><td>AI conversation history</td><td>Until the user runs <code>/clear_history</code> or an applicable deletion request is processed</td></tr>
+        <tr><td>Presence and last-seen data</td><td>While the member remains on the server; removed when the member leaves, with stale records also cleaned up</td></tr>
+        <tr><td>Help-thread archive</td><td>While the related Discord help thread exists; the local archive is removed when that thread is deleted</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>These retention periods apply to copies stored by the bot. They do not delete messages or other content directly from Discord.</p>
+
+  <h2>6. AI Assistant and Third-Party Providers</h2>
+  <p>When a user sends a prompt to the AI assistant, the prompt and relevant conversation context may be sent to a third-party AI provider configured by the bot. This is used only to generate a response to the user's request.</p>
+  <p>The bot may use different third-party AI providers depending on its current configuration. Data is sent only to the provider selected for that request and is not automatically sent to every supported provider.</p>
+  <p>The bot does not use Discord message content to train or fine-tune AI models and does not create training datasets from Discord messages. Third-party AI providers process the data sent to them according to their own privacy policies and terms.</p>
+
+  <h2>7. Data Sharing</h2>
+  <p>The bot does not sell Discord data and does not use it for advertising or marketing analytics.</p>
+  <p>Data may be sent or exposed outside the bot only when needed for a feature, including:</p>
+  <ul>
+    <li>Discord, as part of normal bot operation through Discord's APIs</li>
+    <li>The AI provider selected by the bot when a user uses the AI assistant</li>
+    <li>External services used by moderation or other configured features to retrieve, download, or check user-provided links or attachments</li>
+  </ul>
+
+  <h2>8. Data Deletion</h2>
+
+  <h3>AI conversation history</h3>
+  <p>Users can delete their stored AI conversation history at any time with <code>/clear_history</code>. This command removes the AI history stored for that user. It does not remove unrelated moderation logs, ticket records, help-thread records, or other server data.</p>
+
+  <h3>Other stored data</h3>
+  <p>For requests involving other data stored by the bot, a user can open a support ticket on the IRCM Discord server and request deletion of data associated with their Discord account. The request is reviewed and processed manually.</p>
+  <p>Moderation/server logs and closed ticket histories are deleted no later than 90 days after they are stored. A deletion request may result in applicable records being removed sooner when they are no longer needed for an active moderation, security, support, or dispute-related issue.</p>
+
+  <h2>9. User Choices</h2>
+  <ul>
+    <li>AI conversation history can be deleted with <code>/clear_history</code>.</li>
+    <li>Other applicable data-deletion requests can be submitted through a support ticket on the IRCM Discord server.</li>
+    <li>There is no user-level opt-out for presence tracking.</li>
+    <li>There is no user-level opt-out from automatic moderation and other server-side message processing in relevant channels.</li>
+    <li>Users can stop new AI-provider transmissions by no longer using the AI assistant.</li>
+  </ul>
+
+  <h2>10. Security</h2>
+  <p>Stored bot data is kept on the system used to operate the bot. Access to that data is intended for bot administration, moderation, support, and maintenance. No storage or security system can guarantee absolute protection against unauthorized access.</p>
+
+  <h2>11. Changes to This Privacy Policy</h2>
+  <p>This policy may be updated when the bot's features or data practices change. The latest version will be published on this page with an updated revision date.</p>
+
+  <h2>12. Contact and Privacy Requests</h2>
+  <p>For privacy questions or requests to delete data associated with a Discord account, open a support ticket on the IRCM Discord server and state that the ticket is a privacy or data-deletion request.</p>
+
+  <footer>Privacy Policy for the IRCM Discord bot.</footer>
+</main>
+</body>
+</html>
